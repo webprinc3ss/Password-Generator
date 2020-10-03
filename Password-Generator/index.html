@@ -84,45 +84,19 @@
         /* Function to generate combination of password */
         if (uppercase,lowercase, numerals, spec) {
           var pw1 = '';
-          var str1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+          var str1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+            'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*?><';
 
-          for (i = 1; i <= passwordLength/4; i++) {
-            var pw1 = Math.floor(Math.random()
+          for (i = 1; i <= passwordLength; i++) {
+            var char = Math.floor(Math.random()
               * str1.length + 1);
 
-          console.log(pw1);
+            pw1 += str1.charAt(char);
 
-          var pw2 = '';
-          var str2 = 'abcdefghijklmnopqrstuvwxyz';
+            console.log(pw1);
 
-          for (i = 1; i <= passwordLength/4; i++) {
-            var pw2 = Math.floor(Math.random()
-              * str2.length + 1);
-           
-          console.log(pw2);
-
-          var pw3 = '';
-          var str3 = '0123456789';
-
-          for (i = 1; i <= passwordLength/4; i++) {
-            var pw3 = Math.floor(Math.random()
-              * str3.length + 1);
-           
-          console.log(pw3);
-
-          var pw4 = '';
-          var str4 = '@#$!%^&*()+';
-
-          for (i = 1; i <= passwordLength/4; i++) {
-            var pw4 = Math.floor(Math.random()
-              * str4.length + 1);
-           
-          console.log(pw4);
-          
-
-            
           }
-          
+
         }
       };
 

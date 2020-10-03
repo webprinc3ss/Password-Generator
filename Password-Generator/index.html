@@ -31,39 +31,31 @@
 
 
 
-    function welcomeMsg() {
-
-    }
-
-    //WHEN I click the button to generate a password
-    //THEN I am presented with a series of prompts for password criteria
-    //WHEN prompted for password criteria
-    //THEN I select which criteria to include in the password
-    //WHEN prompted for the length of the password
-    //THEN I choose a length of at least 8 characters and no more than 128 characters
-    //WHEN prompted for character types to include in the password
-    //THEN I choose lowercase, uppercase, numeric, and/or special characters
-    //WHEN I answer each prompt
-    //THEN my input should be validated and at least one character type should be selected
-
-    //WHEN the password is generated
-    //THEN the password is either displayed in an alert or written to the page
 
 
-    //Dead Code ideas
-    //function generatePassword() {
-    //alert ("Enter your password criteria to generate a password as follow.");
-    //var passwordLength = prompt("How long would you like your password to be? (Choose a number between 8 and 128)");
-    //console.log("passwordLength");
+  // Add event listener to generate button
 
-    //Length=passwordLength.length
-    //console.log(Length);
-    //alert ("Welcome!  Welcome to the Password Generator!");
+
+  // Alert to enter criteria
+  //function enterCriteria() {
+  //alert ("Enter your password criteria!");
+  //
+
+// Write password to the #password input
+
+
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
 
 
 
-    var generatePassword = function () {
-        var passwordLength = prompt("Choose a number between 8 and 128");
+    function writePassword() {
+      var password = generatePassword();
+      var passwordText = document.querySelector("#password");
+
+      passwordText.value = password;
+      function generatePassword() {
+         var passwordLength = prompt("Choose a number between 8 and 128");
         console.log(parseInt(passwordLength));
         if (passwordLength < 8 || passwordLength > 128) {
           window.alert("You need choose a number between 8 and 128!");
@@ -82,8 +74,8 @@
         }
 
         /* Function to generate combination of password */
-        if (uppercase,lowercase, numerals, spec) {
-          var pw1 = '';
+        if (uppercase, lowercase, numerals, spec) {
+          var password = '';
           var str1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
             'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*?><';
 
@@ -91,16 +83,26 @@
             var char = Math.floor(Math.random()
               * str1.length + 1);
 
-            pw1 += str1.charAt(char);
+            password += str1.charAt(char)
 
-            console.log(pw1);
+
+
+            // Write password to the #password input
+            console.log(password)
 
           }
-
+          return password;
         }
+      }
       };
 
-    document.getElementById("generate").addEventListener("click", generatePassword);
+      generateBtn.addEventListener("click", writePassword);
+
+
+         
+
+  //document.getElementById("generate").addEventListener("click", generatePassword);
+                
       //function generatePw() {
      // var password = '';
       //var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
@@ -120,40 +122,6 @@
       //el_down.innerHTML = generateP();
    
 
-    
-
-
-
-
-
-
-
-   //toString("length") 
-
-    //Enter a string 8 > 128 characters.
-   //var password = prompt("Enter any number/letter/symbol combiniation between 8 and 128 characters long.  For example: $XyZt%RtL");
-
-
-  //Alert to fill out prompts
-  //alert ("Enter your password criteria to generate a password as follow.");
-
-
-
-
-
-
-   //toString("length") 
-
-
-
-    //Enter a string 8 > 128 characters.
-   //var password = prompt("Enter any number/letter/symbol combiniation between 8 and 128 characters long.  For example: $XyZt%RtL");
-
-
-
-
-  //Alert to fill out prompts
-  //alert ("Enter your password criteria to generate a password as follow.");
 
 
 

@@ -29,74 +29,178 @@
   <!--<script src="script.js">-->
   <script>
 
+  var generateBtn = document.querySelector("#generate");
 
 
 
+  function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
 
-  // Add event listener to generate button
+    passwordText.value = password;
+    function generatePassword() {
+      var passwordLength = prompt("Choose a number between 8 and 128");
+      console.log(parseInt(passwordLength));
+      if (passwordLength < 8 || passwordLength > 128) {
+        window.alert("You need choose a number between 8 and 128!");
+        return generatePassword();
 
-
-  // Alert to enter criteria
-  //function enterCriteria() {
-  //alert ("Enter your password criteria!");
-  //
-
-// Write password to the #password input
-
-
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
-
-
-
-    function writePassword() {
-      var password = generatePassword();
-      var passwordText = document.querySelector("#password");
-
-      passwordText.value = password;
-      function generatePassword() {
-         var passwordLength = prompt("Choose a number between 8 and 128");
-        console.log(parseInt(passwordLength));
-        if (passwordLength < 8 || passwordLength > 128) {
-          window.alert("You need choose a number between 8 and 128!");
-          return generatePassword();
-
-        } else {
-          var uppercase = window.confirm("Uppercase letters?");
-          console.log(uppercase);
-          var lowercase = window.confirm("Lowercase letters?");
-          console.log(lowercase);
-          var numerals = window.confirm("Numerals?");
-          console.log(numerals);
-          var spec = window.confirm("Special characters?");
-          console.log(spec);
-          //return getPw();
-        }
-
-        /* Function to generate combination of password */
-        if (uppercase, lowercase, numerals, spec) {
-          var password = '';
-          var str1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-            'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*?><';
-
-          for (i = 1; i <= passwordLength; i++) {
-            var char = Math.floor(Math.random()
-              * str1.length + 1);
-
-            password += str1.charAt(char)
-
-
-
-            // Write password to the #password input
-            console.log(password)
-
-          }
-          return password;
-        }
+      } else {
+        var uppercase = window.confirm("Uppercase letters?");
+        console.log(uppercase);
+        var lowercase = window.confirm("Lowercase letters?");
+        console.log(lowercase);
+        var numerals = window.confirm("Numerals?");
+        console.log(numerals);
+        var spec = window.confirm("Special characters?");
+        console.log(spec);
       }
-      };
 
-      generateBtn.addEventListener("click", writePassword);
+      
+
+      /* Function to generate combination of password */
+      if (uppercase == 1 && lowercase == 1 && numerals == 1 && spec == 1) {
+        var password = '';
+        var str1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+          'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*?><';
+
+        for (i = 1; i <= passwordLength; i++) {
+          var char = Math.floor(Math.random()
+            * str1.length + 1);
+
+          password += str1.charAt(char)
+
+
+
+          // Write password to the #password input
+          console.log(password)
+
+        }
+        return password;
+      }
+
+      if (uppercase == 0 && lowercase == 1 && numerals == 1 && spec == 1) {
+        var password = '';
+        var str1 = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*?><';
+
+        for (i = 1; i <= passwordLength; i++) {
+          var char = Math.floor(Math.random()
+            * str1.length + 1);
+
+          password += str1.charAt(char)
+
+
+
+          // Write password to the #password input
+          console.log(password)
+
+        }
+        return password;
+      }
+
+      if (uppercase == 0 && lowercase == 0 && numerals == 1 && spec == 1) {
+        var password = '';
+        var str1 = '0123456789!@#$%^&*?><';
+
+        for (i = 1; i <= passwordLength; i++) {
+          var char = Math.floor(Math.random()
+            * str1.length + 1);
+
+          password += str1.charAt(char)
+
+
+
+          // Write password to the #password input
+          console.log(password)
+
+        }
+        return password;
+      }
+
+      if (uppercase == 0 && lowercase == 0 && numerals == 0 && spec == 1) {
+        var password = '';
+        var str1 = '!@#$%^&*?><';
+
+        for (i = 1; i <= passwordLength; i++) {
+          var char = Math.floor(Math.random()
+            * str1.length + 1);
+
+          password += str1.charAt(char)
+
+
+
+          // Write password to the #password input
+          console.log(password)
+
+        }
+        return password;
+      }
+
+      if (uppercase == 0 && lowercase == 0 && numerals == 1 && spec == 0) {
+        var password = '';
+        var str1 = '0123456789';
+
+        for (i = 1; i <= passwordLength; i++) {
+          var char = Math.floor(Math.random()
+            * str1.length + 1);
+
+          password += str1.charAt(char)
+
+
+
+          // Write password to the #password input
+          console.log(password)
+
+        }
+        return password;
+      }
+
+      if (uppercase == 0 && lowercase == 1 && numerals == 0 && spec == 0) {
+        var password = '';
+        var str1 = 'abcdefghijklmnopqrstuvwxyz';
+
+        for (i = 1; i <= passwordLength; i++) {
+          var char = Math.floor(Math.random()
+            * str1.length + 1);
+
+          password += str1.charAt(char)
+
+
+
+          // Write password to the #password input
+          console.log(password)
+
+        }
+        return password;
+      }
+
+      if (uppercase == 1 && lowercase == 0 && numerals == 0 && spec == 0) {
+        var password = '';
+        var str1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        for (i = 1; i <= passwordLength; i++) {
+          var char = Math.floor(Math.random()
+            * str1.length + 1);
+
+          password += str1.charAt(char)
+
+
+
+          // Write password to the #password input
+          console.log(password)
+
+        }
+        return password;
+      }
+
+
+
+
+
+    }
+  };
+
+  generateBtn.addEventListener("click", writePassword);
 
 
          

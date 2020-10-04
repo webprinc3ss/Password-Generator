@@ -1,20 +1,24 @@
-#Password Generator
-##Purpose
-This project is a random password generator wherein the user is prompted to choose the length (between 8 - 128 characters) and the type of characters one would like to include.  If the user does not choose the proper criteria, they will be promoted to try again.
+<h1>Password Generator</h1>
+
+<h2>Purpose</h2>
+This project is a random password generator wherein the user is prompted to choose the length (between 8 - 128 characters) and the type of characters one would like to include.  If the user does not choose the proper criteria, they will be promoted to try again.<br><br>
 
 I was given the template.  The project needed JavaScript in order to work properly.
+<br><br>
 
-##Built With 
+<h2>Built With</h2>
 JavaScript.
+<br><br>
 
-##Website
-<a href="https://webprinc3ss.github.io/Password-Generator/">https://webprinc3ss.github.io/Password-Generator/</a>
+<h2>Website</h2>
+<a href="https://webprinc3ss.github.io/Password-Generator/Password-Generator">https://webprinc3ss.github.io/Password-Generator/</a>
+<br><br>
 
-##Media
+<h2>Media</h2>
+Screenshot: <a href="https://github.com/webprinc3ss/portfolio/blob/master/assets/portfolio_screenshot.jpg">https://github.com/webprinc3ss/portfolio/blob/master/assets/portfolio_screenshot.jpg</a>
+<br><br>
 
-Screenshot: https://github.com/webprinc3ss/portfolio/blob/master/assets/portfolio_screenshot.jpg
-
-##Credit
+<h2>Credit</h2>
 JavaScript hand-coded by webprinc3ss (me).
 Starter code from <a href="https://github.com/coding-boot-camp/friendly-parakeet">friendly-parakeet</a>.
 

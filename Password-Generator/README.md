@@ -20,6 +20,11 @@ Screenshot: <a href="https://raw.githubusercontent.com/webprinc3ss/Password-Gene
 
 ![Screenshot](https://raw.githubusercontent.com/webprinc3ss/Password-Generator/master/Password-Generator/assets/pwgen_screenshot.jpg "Password Generator")
 
+Screenshot: <a href="https://raw.githubusercontent.com/webprinc3ss/Password-Generator/master/Password-Generator/assets/pwgen.gif">https://raw.githubusercontent.com/webprinc3ss/Password-Generator/master/Password-Generator/assets/pwgen.gif</a>
+<br><br>
+
+![Screenshot](https://raw.githubusercontent.com/webprinc3ss/Password-Generator/master/Password-Generator/assets/pwgen.gif "Password Generator")
+
 <h2>Credit</h2>
 JavaScript hand-coded by webprinc3ss (me).
 Starter code from <a href="https://github.com/coding-boot-camp/friendly-parakeet">friendly-parakeet</a>.

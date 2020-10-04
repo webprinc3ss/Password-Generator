@@ -10,19 +10,24 @@ I was given the template.  The project needed JavaScript in order to work proper
 <br>
 
 # Built With
-JavaScript.
+- HTML
+- CSS
+- JavaScript
 <br><br>
 
-<h2>Website</h2>
+# Website
+
+[Github Pages](https://webprinc3ss.github.io/Password-Generator/)
+
+<br>
+
+# Media
 
 ![Website](assets/pwgen_screenshot.jpg)
-<br><br>
 
-<h2>Media</h2>
-<br><br>
+<br>
 
-
-<h2>Credit</h2>
+# Credit
 JavaScript hand-coded by webprinc3ss (me).
-Starter code from <a href="https://github.com/coding-boot-camp/friendly-parakeet">friendly-parakeet</a>.
+Starter code from [friendly-parakeet](https://github.com/coding-boot-camp/friendly-parakeet).
 

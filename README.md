@@ -11,11 +11,11 @@ JavaScript.
 <br><br>
 
 <h2>Website</h2>
-<a href="https://webprinc3ss.github.io/Password-Generator/Password-Generator">https://webprinc3ss.github.io/Password-Generator/</a>
+<a href="https://webprinc3ss.github.io/Password-Generator/Password-Generator">https://webprinc3ss.github.io/Password-Generator/Password-Generator/</a>
 <br><br>
 
 <h2>Media</h2>
-Screenshot: <a href="https://github.com/webprinc3ss/portfolio/blob/master/assets/portfolio_screenshot.jpg">https://github.com/webprinc3ss/portfolio/blob/master/assets/portfolio_screenshot.jpg</a>
+Screenshot: <a href="https://raw.githubusercontent.com/webprinc3ss/Password-Generator/master/Password-Generator/assets/pwgen_screenshot.jpg">https://raw.githubusercontent.com/webprinc3ss/Password-Generator/master/Password-Generator/assets/pwgen_screenshot.jpg</a>
 <br><br>
 
 <h2>Credit</h2>
